@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+
+#dpkg-divert a conffile is very naughty, this should be tidied up into a symblink
+#https://wiki.debian.org/ConfigPackages
+dpkg-divert --add --package plasma-phone-settings --rename --divert /etc/pulse/default.pa.distrib /etc/pulse/default.pa
+
+#DEBHELPER#
+exit 0

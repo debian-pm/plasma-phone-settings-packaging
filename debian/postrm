@@ -1,0 +1,7 @@
+#!/bin/sh
+set -e
+if [ "$1" = remove ] ; then
+    dpkg-divert --remove --package plasma-phone-settings --rename --divert /etc/pulse/default.pa.distrib /etc/pulse/default.pa
+fi
+#DEBHELPER#
+exit 0
