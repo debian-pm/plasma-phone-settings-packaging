@@ -1,0 +1,10 @@
+Package: plasma-phone-settings
+Version: 4
+Architecture: all
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Installed-Size: 68
+Depends: kubuntu-settings-desktop
+Section: kde
+Priority: optional
+Description: Settings and artwork for Plasma Phone
+ This package contains settings used by Plasma Phone.

@@ -1,0 +1,6 @@
+#!/bin/sh
+set -e
+
+if [ "$1" = "configure" ]; then
+    dpkg-divert --add --package plasma-phone-settings --rename --divert /usr/bin/aa-exec-click.distrib /usr/bin/aa-exec-click
+fi
