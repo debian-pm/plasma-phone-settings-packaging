@@ -1,6 +1,7 @@
 #!/usr/bin/make -f
 
-include /usr/share/pkg-kde-tools/qt-kde-team/3/debian-qt-kde.mk
+%:
+	dh $@
 
 override_dh_auto_install:
 	ifeq ($(DEB_HOST_ARCH),armhf)
@@ -8,4 +9,4 @@ override_dh_auto_install:
 	else
 		cp debian/kdeglobals debian/tmp/etc/xdg/kdeglobals
 	endif
-	$(overridden_command) --destdir=debian/tmp
+	$(dh_auto_install) --destdir=debian/tmp
