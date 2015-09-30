@@ -9,4 +9,4 @@ override_dh_auto_install:
 	else
 		cp debian/kdeglobals debian/tmp/etc/xdg/kdeglobals
 	endif
-	$(dh_auto_install) --destdir=debian/tmp
+	dh_auto_install --destdir=debian/tmp
