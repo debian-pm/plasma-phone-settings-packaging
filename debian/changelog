@@ -1,6 +1,7 @@
 plasma-phone-settings (4) UNRELEASED; urgency=medium
 
-  * 
+  * Arch all
+  * Add kdeglobals and debian/rules to install right arch
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 11 Jun 2015 01:26:13 +0200
 
