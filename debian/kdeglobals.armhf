@@ -18,3 +18,6 @@ shadeSortColumn=true
 smallestReadableFont=Oxygen-Sans,5,-1,5,50,0,0,0,0,0
 taskbarFont=Oxygen-Sans,7,-1,5,50,0,0,0,0,0
 toolBarFont=Oxygen-Sans,6,-1,5,50,0,0,0,0,0
+
+[KDE]
+LookAndFeelPackage=org.kde.plasma.phone
