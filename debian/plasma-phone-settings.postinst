@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+pam-auth-update --package touch-extrausers
+
 if [ "$1" = "install" ] || [ "$1" = "configure" ]; then
    echo "#include <abstractions/wayland>" >> /etc/apparmor.d/abstractions/base
 fi
