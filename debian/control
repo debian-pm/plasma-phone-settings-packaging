@@ -7,7 +7,7 @@ Standards-Version: 3.9.6
 
 Package: plasma-phone-settings
 Architecture: all
-Depends: kubuntu-settings-desktop, ${misc:Depends}
+Depends: ${misc:Depends}
 Pre-Depends: apparmor, click-apparmor
 Description: Settings and artwork for Plasma Phone
  This package contains settings used by Plasma Phone.
