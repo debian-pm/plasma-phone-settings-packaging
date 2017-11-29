@@ -1,6 +1,0 @@
-#!/bin/sh
-set -e
-
-if [ "$1" = "remove" -o "$1" = "abort-install" -o "$1" = "disappear" ] ; then
-    dpkg-divert --package plasma-phone-settings --rename --remove /usr/bin/aa-exec-click
-fi
