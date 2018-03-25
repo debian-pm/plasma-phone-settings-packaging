@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 11),
 Standards-Version: 4.1.3
 
 Package: plasma-phone-settings
-Architecture: all
+Architecture: any
 Depends: ${misc:Depends}
 Description: Settings and artwork for Plasma Phone
  This package contains settings used by Plasma Phone.

@@ -4,10 +4,12 @@
 	dh $@
 
 override_dh_auto_install:
-	mkdir -p debian/tmp/etc/xdg/
+	mkdir -p debian/plasma-phone-settings/etc/xdg/
 ifeq ($(DEB_HOST_ARCH),armhf)
-	cp debian/kdeglobals.armhf debian/tmp/etc/xdg/kdeglobals
+	cp debian/kdeglobals.phone debian/plasma-phone-settings/etc/xdg/kdeglobals
+else ifeq ($(DEB_HOST_ARCH),i386)
+	cp debian/kdeglobals.phone debian/plasma-phone-settings/etc/xdg/kdeglobals
 else
-	cp debian/kdeglobals debian/tmp/etc/xdg/kdeglobals
+	cp debian/kdeglobals debian/plasma-phone-settings/etc/xdg/kdeglobals
 endif
-	dh_auto_install --destdir=debian/tmp
+	dh_auto_install
